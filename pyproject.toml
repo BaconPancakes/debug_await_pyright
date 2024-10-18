@@ -1,0 +1,15 @@
+[project]
+name = "debug-await-pyright"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12,<3.13"
+dependencies = ["ipykernel>=6.29.5", "nest-asyncio>=1.6.0", "openai>=1.51.2"]
+
+[tool.pyright]
+venvPath = "."
+venv = ".venv"
+reportMissingTypeStubs = false
+typeCheckingMode = "strict"
+reportUnnecessaryTypeIgnoreComment = "warning"
+enableTypeIgnoreComments = false
